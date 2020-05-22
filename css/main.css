@@ -1,0 +1,14 @@
+#etch {
+	width: 500px;
+	height: 500px;
+	margin: auto;
+	background-color: red;
+	display: grid;
+}
+
+.squares {
+	background-color: blue;
+}
+#etch div:hover {
+	background-color: green;
+}
