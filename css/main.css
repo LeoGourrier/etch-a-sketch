@@ -5,7 +5,16 @@
 	background-color: red;
 	display: grid;
 }
-
+#buttonContainer {
+	width: 100%;
+	height: 10%;
+	margin: auto;
+	float: left;
+}
+#resetBtn {
+	margin-left: 45%;
+	display: block;
+}
 .squares {
 	background-color: blue;
 }
