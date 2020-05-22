@@ -16,11 +16,15 @@ function insertSquares(num) {
 	}
 }
 
-insertSquares(numOfSquares);
-
-let listOfSquares = Array.from(document.querySelectorAll('.squares'));
-listOfSquares.map((x) => {
-	x.addEventListener('mouseenter', function() {
-		x.style.background = 'yellow';
+function addHoverToSquares() {
+	let listOfSquares = Array.from(document.querySelectorAll('.squares'));
+	listOfSquares.map((x) => {
+		x.addEventListener('mouseenter', function() {
+			x.classList += ' yellow';
+			console.log(x.classList);
+		});
 	});
-});
+}
+
+insertSquares(numOfSquares);
+addHoverToSquares();
